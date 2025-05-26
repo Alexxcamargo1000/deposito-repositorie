@@ -20,7 +20,7 @@ export default function Home() {
     produto.nome.toLowerCase().includes(busca.toLowerCase())
   );
   return (
-    <div className="flex flex-col justify-center items-center mt-20 bg-gray-950 text-gray-50">
+    <div className="flex flex-col justify-center items-center mt-20 bg-gray-950 text-gray-50 text-sm p-2">
       <div className="mb-10">
         <img src={logo} width={300} alt="logo deposito camargo" />
       </div>
@@ -36,13 +36,13 @@ export default function Home() {
       <div className="overflow-x-auto mt-4">
         <div className="">
 
-          <div className="flex justify-center items-center max-w-[42rem]">
+          <div className="flex justify-center items-center min-w-full max-w-[42rem] p-2">
             <table className="min-w-full border border-gray-200 rounded-lg shadow-sm">
-              <thead className="bg-gray-100 text-gray-700">
+              <thead className="bg-gray-100 text-gray-700 ">
                 <tr>
-                  <th className="px-4 py-2 text-left">Código</th>
-                  <th className="px-4 py-2 text-left">Nome</th>
-                  <th className="px-4 py-2 text-left">Preço</th>
+                  <th className="px-2 py-2 text-left">Código</th>
+                  <th className="px-2 py-2 text-left">Nome</th>
+                  <th className="px-2 py-2 text-left">Preço</th>
                 </tr>
               </thead>
               <tbody>

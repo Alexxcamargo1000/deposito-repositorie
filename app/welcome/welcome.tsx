@@ -15,9 +15,9 @@ export function Welcome({ produto }: produtosProps) {
 
   return (
     <tr key={produto.id} className="border-t hover:bg-gray-800">
-      <td className="px-4 py-4">{produto.id}</td>
-      <td className="px-4 py-2">{produto.nome}</td>
-      <td className="px-4 py-2">{precoFormatado}</td>
+      <td className="px-2 py-2">{produto.id}</td>
+      <td className="px-2 py-2 text-xs">{produto.nome}</td>
+      <td className="px-2 py-2">{precoFormatado}</td>
     </tr>
     )
 }
